@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capybara</title>
-    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="C:\Users\сметана\Desktop\тз\src\slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
 
 <body>
     <header>
-        <img src="src/img/logo.svg" alt="capybara">
+        <img src="../img/logo.svg" alt="capybara">
         <h1 class="header_h">Capybara</h1>
         <div class="tabs__nav">
             <button class="btn" type="button" data-tab="#tab_1">memes</button>
@@ -26,63 +27,20 @@
     <main>
         <div class="tabs__content">
             <div class="tabs__item" id="tab_1">
-                <style>
-                    /* html,
-                    body {
-                        height: 100%;
-                        font-size: 15px;
-                    } */
-
-                    .swiper {
-                        width: 1000px;
-                        height: 100%;
-                    }
-
-                    .swiper-slide {
-                        text-align: center;
-                        font-size: 18px;
-                        background-color: aliceblue;
-                        display: grid;
-                        justify-items: center;
-                        align-items: center;
-                        grid-template-rows: 600px;
-                    }
-
-                    .swiper-slide img {
-                        width: 58%;
-                        object-fit: cover;
-                    }
-
-                    .swiper-button-next,
-                    .swiper-rtl .swiper-button-prev {
-                        right: 140px !important;
-                        left: auto;
-                    }
-
-                    .swiper-button-prev,
-                    .swiper-rtl .swiper-button-next {
-                        left: 140px !important;
-                        right: auto;
-                    }
-                </style>
-
+                <div class="swiper_container">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img
-                                src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg"></div>
-                        <div class="swiper-slide"><img
-                                src="https://img.freepik.com/free-vector/neon-lights-background-theme_52683-44625.jpg?w=2000">
+                        <div class="swiper-slide"><img src="../img/cap_meme1.jpg"></div>
+                        <div class="swiper-slide"><img src="../img/cap_meme2.jpg">
                         </div>
-                        <div class="swiper-slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg
-                    "></div>
-                        <div class="swiper-slide"><img
-                                src="https://img.freepik.com/premium-vector/minimalist-shape-background_112769-210.jpg">
-                        </div>
+                        <div class="swiper-slide"><img src="../img/cap_meme3.jpg"></div>
+                        
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next baton"></div>
+                <div class="swiper-button-prev baton"></div>
+                </div>
 
                 <script>
                     var swiper = new Swiper(".mySwiper", {
@@ -98,6 +56,11 @@
                         keyboard: true,
                     });
                 </script>
+
+                <div>
+                    <img class = "two_cap" src="../img/capybaras.svg">
+                </div>
+
             </div>
 
             <div class="tabs__item" id="tab_2">
@@ -148,15 +111,15 @@
                     </div>
                 </div>
                 <div class="culc_img">
-                    <img class="img1" src="src/img/schedule.png" alt="schedule">
-                    <img class="img2" src="src/img/capybaras.svg" alt="capybaras">
+                    <img class="img1" src="../img/schedule.png" alt="schedule">
+                    <img class="img2" src="../img/capybaras.svg" alt="capybaras">
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <img src="src/img/capybara_footer.svg" alt="capybara">
+        <img src="../img/capybara_footer.svg" alt="capybara">
         <div class="contacts names">
             <h1>ПСО "Скпипт"</h1>
             <p>Капибара Лиза
@@ -173,16 +136,16 @@
                 любителей капибар
             </p>
             <div class="footer_icons">
-                <img src="src/img/inst.svg" alt="inst">
-                <img src="src/img/vk.svg" alt="vk">
-                <img src="src/img/face.svg" alt="facebook">
-                <img src="src/img/twiter.svg" alt="twiter">
+                <img src="../img/inst.svg" alt="inst">
+                <img src="../img/vk.svg" alt="vk">
+                <img src="../img/face.svg" alt="facebook">
+                <img src="../img/twiter.svg" alt="twiter">
             </div>
         </div>
     </footer>
 
-    <script src="src/js/app.js"></script>
-    <script src="src/js/culc.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/culc.js"></script>
 
 </body>
 
