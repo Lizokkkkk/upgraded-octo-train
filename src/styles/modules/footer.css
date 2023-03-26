@@ -1,0 +1,28 @@
+footer {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  background: rgb(185, 201, 211);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.contacts h1, .contacts p {
+  @ext %family-Inter
+		font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #73757B;
+}
+.contacts h1 {
+  font-weight: 700;
+}
+
+.footer_icons {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+}/*# sourceMappingURL=footer.css.map */

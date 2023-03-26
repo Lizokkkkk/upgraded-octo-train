@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__content {
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+.tabs__item.active {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

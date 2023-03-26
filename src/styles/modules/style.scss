@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.tabs__content {
+	background-color: #fff;
+}
+.tabs__item {
+	display: none;
+	&.active {
+		display: block;
+	}
+}

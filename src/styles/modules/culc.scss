@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+%family-Inter {
+    font-family: 'Inter';
+	font-style: normal;
+}
+%culc-text{
+	font-family: 'Roboto';
+	font-style: normal;
+}
+$text-color1: #66513D;
+$text-color2: white;
+$display: grid;
+.culc_header {
+	@extend %family-Inter;
+	font-weight: 700;
+	font-size: 51px;
+	line-height: 62px;
+	color: $text-color1;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+.culc_p {
+	@extend %family-Inter;
+	font-weight: 600;
+	font-size: 43px;
+	line-height: 52px;
+
+	color: $text-color1;
+	margin-left: 30px;
+}
+.culc_components {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+.culc {
+	width: 359px;
+	border-radius: 39px;
+	margin: 10px 127px auto 177px;
+    background: rgba(74, 74, 74, 1);
+    color: $text-color2;
+	margin-right: 127px;
+	@extend %culc-text;
+}
+.display {
+	height: 211px;
+	display: $display;
+	justify-items: end;
+	align-items: end;
+	p {
+		text-align: right;
+		font-weight: 400;
+		font-size: 64px;
+		line-height: 75px;
+		color: $text-color2;
+		margin: 0;
+		padding-right: 30px;
+		padding-bottom: 6px;
+	}	
+}
+.culc_img {
+	display: $display;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	margin-top: 8px;
+	margin-bottom: 62px;
+	column-gap: 16px;
+	.img1 {
+	margin-left: 74px;
+	}
+}

@@ -1,0 +1,33 @@
+$display: grid;
+$footer-padding: 31px;
+$items: center;
+$footer-color: rgba(185, 201, 211, 1);
+footer {
+	padding-top: $footer-padding;
+	padding-bottom: $footer-padding;
+    background: $footer-color;
+    display: $display;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    justify-items: $items;
+    align-items: $items;
+	
+}
+.contacts {
+    h1, p{
+		@extend %family-Inter;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 36px;
+
+		color: #73757B;
+	}
+	h1 {
+		font-weight: 700;
+	}
+}
+.footer_icons {
+	margin-top: 22px;
+	display: $display;
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: 19px;
+}

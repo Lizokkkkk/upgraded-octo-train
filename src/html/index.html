@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybara</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.svg" alt="capybara">
+        <h1 class="header_h">Capybara</h1>
+        <div class="tabs__nav">
+            <button class="btn" type="button" data-tab="#tab_1">memes</button>
+            <button class="btn" type="button" data-tab="#tab_2">games</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="tabs__content">
+            <div class="tabs__item" id="tab_1">
+                <style>
+                    /* html,
+                    body {
+                        height: 100%;
+                        font-size: 15px;
+                    } */
+
+                    .swiper {
+                        width: 1000px;
+                        height: 100%;
+                    }
+
+                    .swiper-slide {
+                        text-align: center;
+                        font-size: 18px;
+                        background-color: aliceblue;
+                        display: grid;
+                        justify-items: center;
+                        align-items: center;
+                        grid-template-rows: 600px;
+                    }
+
+                    .swiper-slide img {
+                        width: 58%;
+                        object-fit: cover;
+                    }
+
+                    .swiper-button-next,
+                    .swiper-rtl .swiper-button-prev {
+                        right: 140px !important;
+                        left: auto;
+                    }
+
+                    .swiper-button-prev,
+                    .swiper-rtl .swiper-button-next {
+                        left: 140px !important;
+                        right: auto;
+                    }
+                </style>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img
+                                src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg"></div>
+                        <div class="swiper-slide"><img
+                                src="https://img.freepik.com/free-vector/neon-lights-background-theme_52683-44625.jpg?w=2000">
+                        </div>
+                        <div class="swiper-slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg
+                    "></div>
+                        <div class="swiper-slide"><img
+                                src="https://img.freepik.com/premium-vector/minimalist-shape-background_112769-210.jpg">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        spaceBetween: 30,
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                        },
+                        mousewheel: true,
+                        keyboard: true,
+                    });
+                </script>
+            </div>
+
+            <div class="tabs__item" id="tab_2">
+                <h1 class="culc_header">Узнай, в каком возрасте завести капибару</h1>
+                <div class="culc_components">
+                    <div class="culc_p">
+                        <p>1. Пишем свою дату рождения. Например, 20.06.1990
+                            <br>
+                            2. Потом умножаем день и месяц на год: 2006*1990 = 3991940
+                            <br>
+                            3. Берем лист и рисуем график: линия вертикальная идет до 9, линия горизонтальная - это
+                            линия
+                            возраста. Начинаем с 17 лет до 23 и добавляем ряды ниже.
+                            <br>
+                            4. Теперь начинаем проводить перпендикуляры к возрасту. Смотрим, где наивысшая точка.
+                        </p>
+                    </div>
+
+                    <div class="culc">
+                        <div class="display">
+                            <p>0</p>
+                        </div>
+                        <div class="buttons">
+                            <div class="button ac">AC</div>
+                            <div class="button plus-minus">+/-</div>
+                            <div class="button percent">%</div>
+                            <div class="button division orange">÷</div>
+
+                            <div class="button seven">7</div>
+                            <div class="button eight">8</div>
+                            <div class="button nine">9</div>
+                            <div class="button multi orange">x</div>
+
+                            <div class="button four">4</div>
+                            <div class="button five">5</div>
+                            <div class="button six">6</div>
+                            <div class="button minus orange">-</div>
+
+                            <div class="button one">1</div>
+                            <div class="button two">2</div>
+                            <div class="button three">3</div>
+                            <div class="button plus orange">+</div>
+
+                            <div class="button zero">0</div>
+                            <div class="button dot">.</div>
+                            <div class="button equal orange">=</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="culc_img">
+                    <img class="img1" src="../img/schedule.png" alt="schedule">
+                    <img class="img2" src="../img/capybaras.svg" alt="capybaras">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="../img/capybara_footer.svg" alt="capybara">
+        <div class="contacts names">
+            <h1>ПСО "Скпипт"</h1>
+            <p>Капибара Лиза
+                <br>
+                Капибара Никита
+                <br>
+                Капибара Джанни
+            </p>
+        </div>
+        <div class="contacts">
+            <h1>8(495)287-00-00</h1>
+            <p>Анонимный клуб
+                <br>
+                любителей капибар
+            </p>
+            <div class="footer_icons">
+                <img src="../img/inst.svg" alt="inst">
+                <img src="../img/vk.svg" alt="vk">
+                <img src="../img/face.svg" alt="facebook">
+                <img src="../img/twiter.svg" alt="twiter">
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/culc.js"></script>
+
+</body>
+
+</html>

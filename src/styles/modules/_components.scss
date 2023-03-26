@@ -1,0 +1,52 @@
+$color-right-btn: #FFB800;
+$space-between: 7px;
+$btn-size: 80px;
+$color-btn: rgba(217, 217, 217, 1);
+.buttons {
+	display: grid;
+	grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    column-gap: $space-between;
+    row-gap: $space-between;
+    padding: 10px 8px 14px 10px;
+    border-top: 1px solid $color-btn;
+}
+.button.zero {
+    grid-area: zero;
+    width: 139px;
+    border-radius: 140px;
+    text-align: start;
+    padding-left: 28px;
+}
+.button {
+    width: $btn-size;
+    height: $btn-size;
+    background-color: $color-btn;
+    border-radius: 50%;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: $btn-size;
+	text-align: center;
+	cursor: pointer;
+    user-select: none;
+	&:hover {
+        background-color: rgb(233, 233, 233);
+	}
+    &:active {
+        background-color: rgb(171, 171, 171);
+    }
+}
+.orange {
+    background-color: $color-right-btn;
+    &:hover {
+        background-color: #ffce51;
+    }
+    &:active {
+        color: $color-right-btn;
+        background-color: #ffffff;
+    }
+}

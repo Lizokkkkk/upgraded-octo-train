@@ -1,0 +1,222 @@
+.btn, .header_h {
+  font-family: "Ingrid Darling";
+  font-style: normal;
+  font-weight: 400;
+}
+
+header {
+  background-color: rgb(151, 119, 90);
+  display: grid;
+  grid-template-columns: 226px auto auto;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+.header_h {
+  font-size: 120px;
+  line-height: 149px;
+  margin-left: -35px;
+  color: #FFFFFF;
+}
+
+.tabs__nav {
+  display: grid;
+  justify-items: end;
+  grid-template-columns: repeat(2, 225px);
+  -moz-column-gap: 103px;
+       column-gap: 103px;
+}
+
+.btn {
+  width: 225px;
+  height: 89px;
+  background: rgba(175, 144, 114, 0.78);
+  font-size: 90px;
+  line-height: 70px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 60px;
+  cursor: pointer;
+}
+.btn:last-child {
+  border-right: none;
+}
+.btn:hover {
+  background-color: rgb(188, 158, 129);
+}
+.btn.active {
+  background-color: #66513D;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts h1, .contacts p, .culc_p, .culc_header {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.culc {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+.culc_header {
+  font-weight: 700;
+  font-size: 51px;
+  line-height: 62px;
+  color: #66513D;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+
+.culc_p {
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 52px;
+  color: #66513D;
+  margin-left: 30px;
+}
+
+.culc_components {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.culc {
+  width: 359px;
+  border-radius: 39px;
+  margin: 10px 127px auto 177px;
+  background: rgb(74, 74, 74);
+  color: white;
+  margin-right: 127px;
+}
+
+.display {
+  height: 211px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+}
+.display p {
+  text-align: right;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 75px;
+  color: white;
+  margin: 0;
+  padding-right: 30px;
+  padding-bottom: 6px;
+}
+
+.culc_img {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 62px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.culc_img .img1 {
+  margin-left: 74px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tabs__content {
+  background-color: #fff;
+}
+
+.tabs__item {
+  display: none;
+}
+.tabs__item.active {
+  display: block;
+}
+
+footer {
+  padding-top: 31px;
+  padding-bottom: 31px;
+  background: rgb(185, 201, 211);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.contacts h1, .contacts p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #73757B;
+}
+.contacts h1 {
+  font-weight: 700;
+}
+
+.footer_icons {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 19px;
+       column-gap: 19px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-areas: "ac plus-minus percent division" "seven eight nine multi" "four five six minus" "one two three plus" "zero zero dot equal";
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+  row-gap: 7px;
+  padding: 10px 8px 14px 10px;
+  border-top: 1px solid rgb(217, 217, 217);
+}
+
+.button.zero {
+  grid-area: zero;
+  width: 139px;
+  border-radius: 140px;
+  text-align: start;
+  padding-left: 28px;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(217, 217, 217);
+  border-radius: 50%;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 80px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.button:hover {
+  background-color: rgb(233, 233, 233);
+}
+.button:active {
+  background-color: rgb(171, 171, 171);
+}
+
+.orange {
+  background-color: #FFB800;
+}
+.orange:hover {
+  background-color: #ffce51;
+}
+.orange:active {
+  color: #FFB800;
+  background-color: #ffffff;
+}/*# sourceMappingURL=main.css.map */
