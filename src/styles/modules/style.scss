@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
-.tabs__content {
-	background-color: #fff;
-}
-.tabs__item {
+.tabs{
+    &__content {
+    background-color: #fff;
+    }
+    &__item {
 	display: none;
 	&.active {
 		display: block;
 	}
+    }   
 }
