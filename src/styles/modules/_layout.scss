@@ -1,4 +1,4 @@
-%family-Ingrid {
+%font-name {
     font-family: 'Ingrid Darling';
 	font-style: normal;
 	font-weight: 400;
@@ -14,7 +14,7 @@ header {
 	padding-bottom: 4px;
 }
 .header_h {
-	@extend %family-Ingrid;
+	@extend %font-name;
 	font-size: 120px;
 	line-height: 149px;
 	margin-left: -35px;
@@ -30,7 +30,7 @@ header {
 	width: 225px;
 	height: 89px;
 	background: rgba(175, 144, 114, 0.78);
-	@extend %family-Ingrid;
+	@extend %font-name;
 	font-size: 90px;
 	line-height: 70px;
 	color: $text-color;
